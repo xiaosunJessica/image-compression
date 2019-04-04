@@ -1,0 +1,33 @@
+{
+  "name": "image-compression",
+  "version": "1.0.0",
+  "description": "compress image size and capacity and handle mobile picture upload orientation problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaosunJessica/image-compression.git"
+  },
+  "keywords": [
+    "image",
+    "compression"
+  ],
+  "author": "Jessica",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiaosunJessica/image-compression/issues"
+  },
+  "homepage": "https://github.com/xiaosunJessica/image-compression#readme",
+  "dependencies": {
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "path": "^0.12.7",
+    "react": "^16.8.6",
+    "style-loader": "^0.23.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0"
+  }
+}
