@@ -10,7 +10,17 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{ test: /\.(jsx|js)$/, use: 'babel-loader' },
+			{ 
+				test: /\.js[x]?$/,
+        exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-react'],
+						plugins: ['@babel/plugin-transform-runtime']
+					}
+				}
+			},
 			{ test: /\.(css|less)$/, use: [
 				{loader: 'style-loader'}, 
 				{
@@ -23,6 +33,8 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebpackPlugin()
+		new HtmlWebpackPlugin({
+			filename: 'index.html'
+		})
 	]
 }
