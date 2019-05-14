@@ -1,18 +1,19 @@
 {
-  "name": "image-compression",
+  "name": "syq-image-compression",
   "version": "1.0.0",
   "description": "compress image size and capacity and handle mobile picture upload orientation problem",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xiaosunJessica/image-compression.git"
   },
   "keywords": [
-    "image",
+    "img",
     "compression"
   ],
   "author": "Jessica",
@@ -22,19 +23,9 @@
   },
   "homepage": "https://github.com/xiaosunJessica/image-compression#readme",
   "dependencies": {
-    "path": "^0.12.7",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "exif-js": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-transform-runtime": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
+    "babel-cli": "^6.26.0"
   }
 }
